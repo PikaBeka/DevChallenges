@@ -34,7 +34,7 @@
 
 ## Overview
 
-![screenshot](https://ibb.co/HVsKmv6)
+![screenshot](https://i.ibb.co/zrYmKcp/404-not-found-screen.png)
 
 This is a solution to devchallenges.io problem "404-not-found":
 
