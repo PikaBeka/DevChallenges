@@ -1,0 +1,456 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #fafafa; /*dirty white color*/
+
+  --txt-color: #000000; /*black color*/
+  --grey-color: #4f4f4f; /*grey color*/
+  --light-grey-color: #bdbdbd; /*light grey color*/
+  --blakc-grey-color: #333333; /*black gey color*/
+  --txt-footer-color: #828282; /*grey color*/
+  --orange-color: #f2994a; /*orange color*/
+
+  --px48: 3rem; /*48px*/
+  --px24: 1.5rem; /*24px*/
+  --px18: 1.125rem; /*18px*/
+  --px16: 1rem; /*16px*/
+  --px14: 0.875rem; /*14px*/
+  --px12: 0.75rem; /*12px*/
+  --px10: 0.625rem; /*10px*/
+  --px8: 0.5rem; /*8 px*/
+
+  --mont-font: "Montserrat", sans-serif;
+  --play-dis-font: "Playfair Display", serif;
+
+  --shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+body,
+div,
+h1,
+h2,
+p,
+section,
+img,
+h3,
+footer,
+nav,
+a,
+ul,
+h4,
+form,
+fieldset,
+legend,
+input,
+label,
+ol,
+picture {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: var(--txt-color);
+  background-color: var(--bg);
+}
+
+a {
+  color: var(--light-grey-color);
+  text-decoration: none;
+  font-family: var(--mont-font);
+  font-size: var(--px12);
+  font-style: italic;
+  line-height: 150%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 969px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+#main h1 {
+  font-family: var(--play-dis-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--px24);
+  line-height: 32px;
+
+  margin-bottom: 12px;
+}
+
+#main p {
+  font-family: var(--mont-font);
+  font-style: italic;
+  font-weight: 500;
+  font-size: var(--px12);
+  line-height: 15px;
+
+  margin-bottom: 12px;
+  margin-left: 12px;
+  max-width: 500px;
+}
+
+.text-fl {
+  display: flex;
+  align-items: flex-start;
+}
+
+footer {
+  margin-top: auto;
+  font-family: var(--mont-font);
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--px14);
+  line-height: 17px;
+  color: var(--txt-footer-color);
+  margin-bottom: 24px;
+}
+
+.benefits {
+  margin-bottom: 32px;
+  grid-area: benefits;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  font-family: var(--mont-font);
+  font-style: normal;
+
+  margin-right: 34px;
+}
+
+.benefit img {
+  margin-right: 4px;
+}
+
+.benefit-txt h4 {
+  font-weight: bold;
+  font-size: var(--px8);
+  line-height: 10px;
+  text-transform: uppercase;
+
+  color: var(--light-grey-color);
+}
+
+.benefit-txt p {
+  font-weight: 500;
+  font-size: var(--px10);
+  line-height: 12px;
+
+  color: var(--orange-color);
+}
+
+.clock-benefits {
+  margin-top: 21px;
+  display: flex;
+}
+
+.clock-benefits p {
+  color: var(--blakc-grey-color);
+}
+
+/*THE INGREDIENT STYLING*/
+#ingredients {
+  margin-bottom: 30px;
+  color: var(--blakc-grey-color);
+}
+
+#ingredients form {
+  margin-bottom: 42px;
+}
+
+#ingredients form:last-child {
+  margin-bottom: 30px;
+}
+
+#ingredients h2 {
+  margin-bottom: 13px;
+
+  font-family: var(--play-dis-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--px18);
+  line-height: 24px;
+}
+
+#ingredients legend {
+  margin-bottom: 24px;
+
+  font-family: var(--play-dis-font);
+  font-style: italic;
+  font-weight: normal;
+  font-size: var(--px16);
+  line-height: 21px;
+}
+
+#ingredients label {
+  font-family: var(--mont-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--px14);
+  line-height: 179%;
+}
+
+#text {
+  grid-area: text;
+}
+
+.field {
+  margin-bottom: 10px;
+  display: flex;
+  max-width: 543px;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 2.15em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 21px;
+  height: 21px;
+  border: 1px solid var(--txt-footer-color);
+  background: inherit;
+  border-radius: 4px;
+  -webkit-transition: all 0.275s;
+  transition: all 0.275s;
+  margin-top: 5px;
+}
+
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: "✓";
+  position: absolute;
+  top: 0.75em;
+  left: 0.125em;
+  font-size: 1.5em;
+  color: var(--orange-color);
+  line-height: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0) rotate(45deg);
+  transform: scale(0) rotate(45deg);
+}
+
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(0);
+  transform: scale(1) rotate(0);
+}
+/*END*/
+
+/*THE INSTRUCTIONS STYLING*/
+#instructions {
+  margin-bottom: 130px;
+  font-style: normal;
+}
+
+#instructions h2 {
+  margin-bottom: 28px;
+  font-family: var(--play-dis-font);
+  font-weight: bold;
+  font-size: var(--px24);
+  line-height: 32px;
+
+  color: var(--blakc-grey-color);
+}
+
+#instructions ol {
+  color: var(--txt-color);
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+#instructions li {
+  counter-increment: my-awesome-counter;
+  font-family: var(--mont-font);
+  font-weight: normal;
+  font-size: var(--px16);
+  line-height: 20px;
+  max-width: 528px;
+  position: relative;
+  margin: 1.5rem;
+  padding-left: 28px;
+}
+
+#instructions li::before {
+  position: absolute;
+  top: 0;
+  left: -1.5rem;
+  content: counter(my-awesome-counter);
+  background: var(--orange-color);
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  display: inline-block;
+  line-height: 32px;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+
+  font-family: var(--play-dis-font);
+  font-weight: bold;
+  font-size: var(--px24);
+  line-height: 32px;
+}
+/*END*/
+
+@media only screen and (min-width: 768px) {
+  #main {
+    margin-top: 52px;
+    margin-bottom: 48px;
+  }
+
+  #main h1 {
+    font-size: var(--px48);
+    line-height: 64px;
+  }
+
+  #main p {
+    font-size: var(--px14);
+    line-height: 17px;
+
+    margin-bottom: 43px;
+    margin-left: 17px;
+  }
+
+  #content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 524px));
+    grid-template-areas: "text benefits";
+  }
+
+  .benefits {
+    margin: 0;
+    margin-left: auto;
+
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+
+    width: 90%;
+    max-width: 216px;
+    height: 367px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .benefit {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 43px;
+  }
+
+  .benefit img {
+    margin-right: 14px;
+  }
+
+  .benefit-txt h4 {
+    font-size: var(--px10);
+    line-height: 12px;
+    margin-bottom: 4px;
+  }
+
+  .benefit-txt p {
+    font-size: var(--px14);
+    line-height: 17px;
+  }
+
+  .clock-benefits {
+    margin: 0;
+    display: unset;
+  }
+
+  #ingredients form {
+    margin-bottom: 38px;
+  }
+
+  #ingredients form:last-child {
+    margin-bottom: 30px;
+  }
+
+  #ingredients h2 {
+    margin-bottom: 32px;
+    font-size: var(--px24);
+    line-height: 32px;
+  }
+
+  #ingredients legend {
+    margin-bottom: 30px;
+    font-size: var(--px18);
+    line-height: 24px;
+  }
+
+  #ingredients label {
+    font-size: var(--px16);
+    line-height: 156%;
+  }
+
+  .field {
+    margin-bottom: 13px;
+  }
+
+  #instructions {
+    margin-bottom: 93px;
+  }
+
+  #instructions li {
+    font-size: var(--px16);
+    line-height: 20px;
+    max-width: 528px;
+    position: relative;
+    margin: 1.75rem;
+  }
+
+  a {
+    font-size: var(--px16);
+    line-height: 150%;
+    margin-top: 57px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+}
