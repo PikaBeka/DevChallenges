@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/PikaBeka/DevChallenges/interior-consultant-master/">
+    <a href="https://github.com/PikaBeka/DevChallenges/tree/master/interior-consultant-master/">
       Solution
     </a>
     <span> | </span>
