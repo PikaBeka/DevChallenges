@@ -77,13 +77,13 @@
           </div>
         </div>
       </div>
-      <form action="">
+      <form name="myForm" onsubmit="return validateForm()" id="myForm">
         <div class="contact">
           <h2>Contact infomation</h2>
           <div class="field">
             <label for="mail">E-mail</label>
             <input
-              type="text"
+              type="email"
               name="mail"
               id="mail"
               placeholder="Enter your email..."
@@ -93,7 +93,7 @@
           <div class="field">
             <label for="phone">Phone</label>
             <input
-              type="email"
+              type="phone"
               name="phone"
               id="phone"
               placeholder="Enter your phone..."
@@ -120,7 +120,7 @@
               type="text"
               name="address"
               id="address"
-              placeholder="Enter your phone..."
+              placeholder="Enter your address..."
               required
             />
           </div>
@@ -157,12 +157,13 @@
               />
             </div>
           </div>
-          <input type="checkbox" name="toSave" id="toSave" required />
+          <input type="checkbox" name="toSave" id="toSave" />
           <label for="toSave">Save this information for next time</label>
           <br />
         </div>
+        <div class="result"></div>
         <div class="button">
-          <input type="submit" value="Continue" onclick="toSubmit()" />
+          <input type="submit" value="Continue" />
         </div>
       </form>
     </section>

@@ -47,4 +47,21 @@ function recount() {
     "$" + total.toFixed(2).toString(10);
 }
 
-function toSubmit() {}
+function validateForm() {
+  let form = document.forms["myForm"];
+  let phone = form["phone"].value;
+  if (phone.match(/[a-zA-Z]/)) {
+    alert("Please enter only numbers to phone field!!!");
+    return flase;
+  }
+  let postal = form["postal"].value;
+  if (postal.match(/[a-zA-Z]/)) {
+    alert("Please enter only numbers to postal code field!!!");
+    return flase;
+  }
+  let result = "";
+  if (result == "") {
+    alert("Your form submitted");
+    return true;
+  }
+}

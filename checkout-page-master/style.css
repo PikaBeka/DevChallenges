@@ -104,7 +104,7 @@ h1 {
 }
 
 #checkout-info {
-  max-width: 383px;
+  width: 100%;
   padding: 34px 25px 18px 27px;
 
   background: var(--grey-6-color);
@@ -251,7 +251,7 @@ select::-ms-expand {
 }
 
 [type="checkbox"] {
-  display: none;
+  appearance: none;
 }
 
 [type="checkbox"]:not(:checked) + label,
@@ -377,6 +377,8 @@ input[type="checkbox"] + label {
     margin-bottom: 0;
     grid-area: checkout;
     justify-self: flex-end;
+
+    max-width: 383px;
   }
 
   .item {
