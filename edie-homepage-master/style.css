@@ -1,0 +1,276 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #fff; /*white color*/
+
+  --blue-color: #2d9cdb; /*blue color*/
+  --green-color: #27ae60; /*green color*/
+  --red-color: #eb5757; /*red color*/
+
+  --light-grey-color: #e0e0e0; /*light grey color*/
+  --dark-grey-color: #4e5150; /*black gey color*/
+  --grey-1-color: #333333; /*grey 1*/
+  --grey-2-color: #4f4f4f; /*grey 2*/
+  --grey-3-color: #828282; /*grey 3*/
+  --grey-4-color: #bdbdbd; /*grey 4*/
+  --grey-6-color: #f2f2f2; /*grey 6*/
+
+  --px48: 3rem; /*48 px*/
+  --px36: 2.25rem; /*36 px*/
+  --px24: 1.5rem; /*24px*/
+  --px18: 1.125rem; /*18px*/
+  --px16: 1rem; /*16px*/
+  --px14: 0.875rem; /*14px*/
+  --px12: 0.75rem; /*12px*/
+  --px10: 0.625rem; /*10px*/
+
+  --mont-font: "Montserrat", sans-serif;
+  --pop-font: "Poppins", sans-serif;
+  --heeb-font: "Heebo", sans-serif;
+}
+
+body,
+div,
+h1,
+h2,
+p,
+section,
+img,
+h3,
+footer,
+nav,
+a,
+ul,
+h4,
+form,
+fieldset,
+legend,
+input,
+label,
+ol,
+picture {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey-1-color);
+}
+
+a:visited {
+  color: var(--grey-1-color);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  background-color: var(--bg);
+
+  font-family: var(--pop-font);
+  font-style: normal;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-wide {
+  width: 92.8%;
+  max-width: 1332px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  font-family: var(--mont-font);
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--px14);
+  line-height: 17px;
+  color: #f2f2f2;
+  margin-bottom: 24px;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #100e1d;
+}
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 13px;
+  margin-bottom: 48px;
+  font-style: normal;
+}
+
+.topnav a {
+  color: var(--grey-1-color);
+  text-decoration: none;
+}
+
+.topnav .links {
+  display: none;
+  font-family: var(--pop-font);
+  font-weight: 500;
+  font-size: var(--px18);
+  line-height: var(--px24);
+}
+
+#logo {
+  font-family: var(--heeb-font);
+  font-weight: 800;
+  font-size: var(--px24);
+  line-height: 35px;
+}
+
+.topnav.responsive {
+  display: unset;
+  position: relative;
+}
+
+.topnav.responsive .links {
+  display: block;
+}
+
+.topnav.responsive a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.topnav.responsive .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#home {
+  font-family: var(--pop-font);
+  font-style: normal;
+}
+
+#home img {
+  margin-top: 15px;
+  margin-bottom: 22px;
+  border-radius: 18px;
+}
+
+#home .header-txt {
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+#home .header-txt p {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--blue-color);
+}
+
+#home h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--grey-1-color);
+}
+
+#home .foot-txt {
+  padding-left: 30px;
+  width: 87.5%;
+  max-width: 366px;
+
+  margin-bottom: 102px;
+}
+
+#home .foot-txt h2 {
+  margin-bottom: 33px;
+}
+
+#home .foot-txt p {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: var(--grey-2-color);
+  margin-bottom: 31px;
+}
+
+form label {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+
+  color: var(--grey-3-color);
+}
+
+.field {
+  position: relative;
+  width: 106%;
+  max-width: 350px;
+}
+
+.field input[type="email"] {
+  width: 100%;
+  background: #f2f2f2;
+  border-radius: 12px;
+  height: 47px;
+  padding-left: 19px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--grey-2-color);
+}
+
+::placeholder {
+  color: var(--grey-4-color);
+}
+
+.field input[type="submit"] {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background: #2d9cdb;
+  border-radius: 12px;
+  height: 39px;
+  width: 24.8%;
+  max-width: 94px;
+
+  color: var(--grey-6-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media screen and (min-width: 600px) {
+  .topnav .icon {
+    display: none;
+  }
+
+  .topnav .links {
+    display: block;
+  }
+}
