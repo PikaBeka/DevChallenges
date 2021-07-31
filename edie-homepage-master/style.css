@@ -90,7 +90,7 @@ body {
 }
 
 .wrapper {
-  width: 90%;
+  width: 92.26%;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -118,6 +118,7 @@ footer {
   background-color: #100e1d;
 }
 
+/*NAV START*/
 .topnav {
   overflow: hidden;
   display: flex;
@@ -145,7 +146,7 @@ footer {
   font-family: var(--heeb-font);
   font-weight: 800;
   font-size: var(--px24);
-  line-height: 35px;
+  line-height: var(--px36);
 }
 
 .topnav.responsive {
@@ -185,15 +186,15 @@ footer {
 }
 
 #home .header-txt p {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: var(--px12);
+  line-height: var(--px18);
   color: var(--blue-color);
 }
 
 #home h2 {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: var(--px24);
+  line-height: var(--px36);
   color: var(--grey-1-color);
 }
 
@@ -211,8 +212,8 @@ footer {
 
 #home .foot-txt p {
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: var(--px12);
+  line-height: var(--px18);
 
   color: var(--grey-2-color);
   margin-bottom: 31px;
@@ -220,8 +221,8 @@ footer {
 
 form label {
   font-weight: 500;
-  font-size: 10px;
-  line-height: 15px;
+  font-size: var(--px10);
+  line-height: var(--px16);
 
   color: var(--grey-3-color);
 }
@@ -240,7 +241,7 @@ form label {
   padding-left: 19px;
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--px14);
   line-height: 21px;
   color: var(--grey-2-color);
 }
@@ -252,7 +253,7 @@ form label {
 .field input[type="submit"] {
   position: absolute;
   top: 4px;
-  right: 0;
+  right: 4px;
   background: #2d9cdb;
   border-radius: 12px;
   height: 39px;
@@ -261,16 +262,304 @@ form label {
 
   color: var(--grey-6-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--px14);
   line-height: 21px;
 }
 
-@media screen and (min-width: 600px) {
+.wrapper h3:first-child {
+  margin-left: 34px;
+  font-family: var(--pop-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--px24);
+  line-height: var(--px36);
+  color: var(--grey-1-color);
+}
+
+#services {
+  margin-bottom: 145px;
+}
+
+#services .card {
+  padding: 46px 33px 46px 35px;
+}
+
+.icon img {
+  margin: 0 auto;
+  display: block;
+}
+
+#services .icon {
+  border-radius: 16px;
+  width: 67px;
+  height: 67px;
+
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.card {
+  font-family: var(--pop-font);
+  font-style: normal;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+.card h3 {
+  font-weight: bold;
+  font-size: var(--px24);
+  line-height: var(--px36);
+  color: var(--grey-1-color);
+  margin-top: 35px;
+  margin-bottom: 24px;
+}
+
+.card p {
+  font-weight: normal;
+  font-size: var(--px16);
+  line-height: var(--px24);
+  color: var(--grey-2-color);
+  margin-bottom: 30px;
+}
+
+.card button {
+  width: 116px;
+  background: var(--light-grey-color);
+  border: none;
+  border-radius: 12px;
+  padding: 9px 12px;
+
+  color: var(--grey-3-color);
+  font-weight: 500;
+  font-size: var(--px16);
+  line-height: var(--px24);
+  cursor: pointer;
+}
+
+#services .card:nth-child(1) .icon {
+  background-color: var(--blue-color);
+}
+
+#services .card:nth-child(2) .icon {
+  background-color: var(--green-color);
+}
+
+#services .card:nth-child(3) .icon {
+  background-color: var(--red-color);
+}
+
+.card:hover {
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+
+.card:hover button {
+  background-color: var(--blue-color);
+  color: white;
+}
+
+#projects {
+  font-family: var(--pop-font);
+  font-style: normal;
+  margin-bottom: 100px;
+}
+
+#projects h3 {
+  margin-bottom: 48px;
+}
+
+.figure {
+  margin-bottom: 36px;
+}
+
+.figure img {
+  border-radius: 24px;
+  margin-bottom: 13px;
+}
+
+.figure p {
+  font-weight: 300;
+  font-size: var(--px12);
+  line-height: var(--px18);
+  color: var(--grey-3-color);
+}
+
+.figure h4 {
+  font-weight: 500;
+  font-size: var(--px18);
+  line-height: 27px;
+  color: var(--grey-1-color);
+}
+
+#projects a {
+  font-weight: 500;
+  font-size: var(--px18);
+  line-height: 27px;
+  color: var(--blue-color);
+  display: flex;
+  align-items: center;
+}
+
+#projects a img {
+  margin-left: 14px;
+}
+
+#team {
+  font-family: var(--pop-font);
+  font-style: normal;
+  font-weight: 500;
+
+  margin-bottom: 100px;
+}
+
+#team h2 {
+  font-size: var(--px36);
+  line-height: 54px;
+  color: var(--grey-1-color);
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+#team p {
+  font-weight: normal;
+  font-size: var(--px16);
+  line-height: var(--px24);
+  color: var(--grey-2-color);
+  margin-bottom: 36px;
+}
+
+#team p.alert {
+  font-size: var(--px18);
+  line-height: 27px;
+  color: var(--red-color);
+  margin-bottom: 7px;
+}
+
+#team .images {
+  display: grid;
+  gap: 9px;
+  grid-template-columns: repeat(2, minmax(auto, 320px));
+}
+
+#team .images img {
+  border-radius: 24px;
+}
+
+#team .images > img {
+  margin: auto;
+}
+
+#team .images div {
+  display: grid;
+  gap: 9px;
+  grid-template-rows: repeat(2, minmax(145px, auto));
+}
+
+#team img[src="person1.png"] {
+  width: 90%;
+}
+
+#clients {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 103px;
+}
+
+#clients .citation {
+  font-size: var(--px24);
+  line-height: var(--px36);
+  color: var(--grey-1-color);
+  margin-bottom: 31px;
+}
+
+#clients img {
+  border-radius: 12px;
+  width: 82px;
+  height: 82px;
+  margin-right: 30px;
+}
+
+#clients .author {
+  display: flex;
+}
+
+#clients .position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+#clients .name {
+  font-size: var(--px24);
+  line-height: var(--px36);
+  color: var(--grey-1-color);
+}
+
+#clients .occupation {
+  font-size: var(--px18);
+  line-height: 27px;
+  color: var(--grey-3-color);
+}
+
+#contact {
+  padding-top: 36px;
+  padding-right: 42px;
+}
+
+#contact .links {
+  margin-bottom: 64px;
+}
+
+#contact .links a {
+  font-family: var(--pop-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--px18);
+  line-height: var(--px36);
+  color: white;
+  display: block;
+}
+
+#contact .social a {
+  font-family: var(--heeb-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: var(--px36);
+  line-height: 53px;
+
+  color: var(--grey-6-color);
+  margin-bottom: 8px;
+}
+
+#contact .social img {
+  margin-right: 11px;
+  margin-bottom: 65px;
+}
+
+#contact .input {
+  margin-bottom: 154px;
+}
+
+#contact .input .field {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .topnav {
+    margin-top: 24px;
+    margin-bottom: 68px;
+  }
+
   .topnav .icon {
     display: none;
   }
 
   .topnav .links {
     display: block;
+  }
+
+  .topnav .links a {
+    margin-left: 20px;
   }
 }
