@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://ibb.co/VDMt4Rn)
+![screenshot](https://i.ibb.co/J2rKJV6/Edie.png)
 
 - Where can I see your demo?
   In the upper link Demo
