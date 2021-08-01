@@ -91,7 +91,7 @@ body {
 
 .wrapper {
   width: 92.26%;
-  max-width: 960px;
+  max-width: 1105px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -169,6 +169,9 @@ footer {
   right: 0;
 }
 
+/*NAV END
+  HOME SECTION*/
+
 #home {
   font-family: var(--pop-font);
   font-style: normal;
@@ -182,7 +185,7 @@ footer {
 
 #home .header-txt {
   font-weight: 500;
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 #home .header-txt p {
@@ -199,7 +202,7 @@ footer {
 }
 
 #home .foot-txt {
-  padding-left: 30px;
+  margin-left: 30px;
   width: 87.5%;
   max-width: 366px;
 
@@ -265,6 +268,8 @@ form label {
   font-size: var(--px14);
   line-height: 21px;
 }
+
+/*SERVICES SECTION*/
 
 .wrapper h3:first-child {
   margin-left: 34px;
@@ -357,6 +362,8 @@ form label {
   color: white;
 }
 
+/*WORKS SECTION*/
+
 #projects {
   font-family: var(--pop-font);
   font-style: normal;
@@ -395,13 +402,14 @@ form label {
   font-size: var(--px18);
   line-height: 27px;
   color: var(--blue-color);
-  display: flex;
-  align-items: center;
+  display: inline-flex;
 }
 
 #projects a img {
   margin-left: 14px;
 }
+
+/*TEAM SECTION*/
 
 #team {
   font-family: var(--pop-font);
@@ -458,8 +466,10 @@ form label {
   width: 90%;
 }
 
+/*CLIENTS SECTION*/
+
 #clients {
-  font-family: Poppins;
+  font-family: var(--pop-font);
   font-style: normal;
   font-weight: 500;
   margin-bottom: 103px;
@@ -470,6 +480,7 @@ form label {
   line-height: var(--px36);
   color: var(--grey-1-color);
   margin-bottom: 31px;
+  max-width: 937px;
 }
 
 #clients img {
@@ -501,6 +512,8 @@ form label {
   line-height: 27px;
   color: var(--grey-3-color);
 }
+
+/*FOOTER*/
 
 #contact {
   padding-top: 36px;
@@ -561,5 +574,350 @@ form label {
 
   .topnav .links a {
     margin-left: 20px;
+  }
+
+  #home img {
+    margin-top: 25px;
+    margin-bottom: 32px;
+  }
+
+  #home .header-txt {
+    margin-left: 100px;
+  }
+
+  #home .header-txt p {
+    font-size: var(--px14);
+    line-height: var(--px24);
+    margin-bottom: 8px;
+  }
+
+  #home .foot-txt {
+    margin-left: 100px;
+    margin-bottom: 150px;
+  }
+
+  #home .foot-txt h2 {
+    margin-bottom: 37px;
+  }
+
+  #home .foot-txt p {
+    margin-bottom: 36px;
+  }
+
+  form label {
+    font-size: var(--px12);
+    line-height: var(--px18);
+    margin-bottom: 4px;
+  }
+
+  .field input[type="email"] {
+    height: 52px;
+    padding-left: 20px;
+    font-size: var(--px16);
+    line-height: 23px;
+  }
+
+  .field input[type="submit"] {
+    height: 44px;
+    font-size: var(--px16);
+    line-height: 23px;
+  }
+
+  .wrapper h3:first-child {
+    margin-left: 14px;
+  }
+
+  #services {
+    margin-bottom: 170px;
+  }
+
+  .col-3 {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+  }
+
+  #projects {
+    margin-bottom: 160px;
+  }
+
+  #projects h3 {
+    margin-bottom: 12px;
+  }
+
+  .col-2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
+
+  .figure {
+    margin-bottom: 0;
+  }
+
+  .figure:nth-child(2n + 1) {
+    margin-top: 88px;
+  }
+
+  .figure img {
+    margin-bottom: 16px;
+  }
+
+  .figure p {
+    font-size: var(--px14);
+    line-height: 21px;
+  }
+
+  #projects .arrow-link {
+    text-align: right;
+  }
+
+  #projects a img {
+    margin-left: 17px;
+  }
+
+  #team {
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    align-items: center;
+    gap: 35px;
+  }
+
+  #team p {
+    margin-bottom: 0;
+  }
+
+  #team .images {
+    gap: 15px;
+  }
+
+  #team .images div {
+    gap: 24px;
+  }
+
+  #clients {
+    margin-bottom: 153px;
+  }
+
+  #clients .citation {
+    margin-bottom: 36px;
+    width: 90%;
+  }
+
+  #contact {
+    padding-top: 46px;
+    padding-right: 0;
+  }
+
+  .prime-footer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    margin-bottom: 75px;
+  }
+
+  #contact .links {
+    margin-bottom: 0;
+  }
+
+  #contact .input {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .topnav {
+    margin-top: 33px;
+    margin-bottom: 82px;
+  }
+
+  .topnav .links a {
+    margin-left: 50px;
+  }
+
+  #home img {
+    margin-top: 34px;
+    margin-bottom: 37px;
+  }
+
+  #home .header-txt {
+    margin-left: 150px;
+  }
+
+  #home .header-txt p {
+    font-size: var(--px18);
+    line-height: 27px;
+    margin-bottom: 12px;
+  }
+
+  #home h2 {
+    font-size: var(--px48);
+    line-height: 72px;
+  }
+
+  #home .foot-txt {
+    margin-left: 150px;
+    margin-bottom: 150px;
+  }
+
+  #home .foot-txt h2 {
+    margin-bottom: 37px;
+  }
+
+  #home .foot-txt p {
+    margin-bottom: 36px;
+    font-size: var(--px14);
+    line-height: 20px;
+  }
+
+  form label {
+    font-size: var(--px14);
+    line-height: 21px;
+    margin-bottom: 7px;
+  }
+
+  .field input[type="email"] {
+    height: 57px;
+    padding-left: 21px;
+    font-size: var(--px18);
+    line-height: 27px;
+  }
+
+  .field input[type="submit"] {
+    height: 49px;
+    font-size: var(--px18);
+    line-height: 27px;
+  }
+
+  .wrapper h3:first-child {
+    margin-left: 10px;
+    font-size: var(--px36);
+    line-height: 54px;
+  }
+
+  #services {
+    margin-bottom: 182px;
+  }
+
+  #projects {
+    margin-bottom: 200px;
+  }
+
+  .figure:nth-child(2n + 1) {
+    margin-top: 176px;
+  }
+
+  .figure img {
+    margin-bottom: 20px;
+  }
+
+  .figure h4 {
+    font-size: var(--px24);
+    line-height: 36px;
+  }
+
+  #projects a {
+    font-size: var(--px24);
+    line-height: var(--px36);
+  }
+
+  #team {
+    margin-bottom: 173px;
+  }
+
+  #clients {
+    margin-bottom: 178px;
+  }
+
+  #clients .citation {
+    margin-bottom: 49px;
+    font-size: var(--px36);
+    line-height: 54px;
+  }
+
+  .prime-footer {
+    margin-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .topnav {
+    margin-top: 42px;
+    margin-bottom: 96px;
+  }
+
+  .topnav .links a {
+    margin-left: 70px;
+  }
+
+  #logo {
+    font-size: var(--px36);
+    line-height: 53px;
+  }
+
+  .topnav .links {
+    font-size: var(--px24);
+    line-height: var(--px36);
+  }
+
+  #home img {
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+
+  #home .header-txt {
+    margin-left: 205px;
+  }
+
+  #home .header-txt p {
+    margin-bottom: 16px;
+  }
+
+  #home .foot-txt {
+    margin-left: 205px;
+    margin-bottom: 200px;
+  }
+
+  #home .foot-txt h2 {
+    margin-bottom: 42px;
+  }
+
+  #home .foot-txt p {
+    margin-bottom: 42px;
+    font-size: var(--px18);
+    line-height: 27px;
+  }
+
+  form label {
+    margin-bottom: 9px;
+  }
+
+  #services {
+    margin-bottom: 194px;
+  }
+
+  #projects {
+    margin-bottom: 241px;
+  }
+
+  .figure:nth-child(2n + 1) {
+    margin-top: 176px;
+  }
+
+  #projects a {
+    font-size: var(--px24);
+    line-height: var(--px36);
+  }
+
+  #team {
+    margin-bottom: 196px;
+  }
+
+  #clients {
+    margin-bottom: 203px;
+  }
+
+  .prime-footer {
+    margin-bottom: 118px;
   }
 }
