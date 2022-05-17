@@ -1,0 +1,213 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #F2F2F2; /*grey color*/
+
+  --blue-color: #2F80ED; /*blue color*/
+  --grey-color: #2F80ED; /*grey color*/
+  --box-color: #FFFFFF; /*background color for boxes*/
+
+  --font-color-headers: #4F4F4F;
+  --gray3-color: #828282;
+  --gray2-color: #4F4F4F;
+  --onecol-header-color: #333333;
+  --blog-hidden-color: #E0E0E0;
+
+  --px48: 3rem; /*48 px*/
+  --px36: 2.25rem; /*36 px*/
+  --px24: 1.5rem; /*24px*/
+  --px18: 1.125rem; /*18px*/
+  --px16: 1rem; /*16px*/
+  --px14: 0.875rem; /*14px*/
+  --px12: 0.75rem; /*12px*/
+  --px10: 0.625rem; /*10px*/
+
+  --mont-font: "Montserrat", sans-serif;
+}
+
+body,
+div,
+h1,
+h2,
+p,
+section,
+img,
+h3,
+footer,
+nav,
+a,
+ul,
+h4,
+form,
+fieldset,
+legend,
+input,
+label,
+ol,
+picture {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey-1-color);
+}
+
+a:visited {
+  color: var(--grey-1-color);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  background-color: var(--bg);
+
+  font-family: var(--pop-font);
+  font-style: normal;
+  border-radius: 12px;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 92%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+p{
+  font-family: var(--mont-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--px18);
+  line-height: 22px;
+
+  /* Gray 3 */
+
+  color: var(--gray3-color);
+}
+
+.box{
+  margin-top: 50px;
+  padding: 23px;
+  background-color: var(--box-color);
+  border-radius: 12px;
+}
+
+.figure img{
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--px24);
+  line-height: 29px;
+
+  color: var(--font-color-headers);
+  font-family: var(--mont-font);
+}
+
+.figure-text .title{
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.contacts{
+  margin-top: 36px;
+  margin-bottom: 37px;
+}
+
+.contacts p{
+  font-size: var(--px16)
+}
+
+.one-column{
+  max-width: 415px;
+}
+
+.contact-field{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.contact-field .material-icons{
+  margin-right: 19px;
+  color: var(--font-color-headers);
+}
+
+.shadow-box{
+  opacity: 0;
+  display: none;
+  width: 327px;
+  height: 1px;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 1024px) {
+  
+}
+
+@media screen and (min-width: 1440px) {
+  
+}
