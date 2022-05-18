@@ -18,11 +18,11 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     
-    <div class="wrapper">
+    <div class="wrapper grid-3-columns" id="about">
       <div class="box one-column">
         <div class="figure">
           <img src="images/portfolio.jpg" alt="avatar" class="img-fluid">
@@ -47,7 +47,7 @@
         </div>
       </div>
 
-      <div class="box one-column">
+      <div class="box one-column skill-box">
         <h2 class="title">FRONT END</h2>
         <div class="skills">
           <div class="skill-field">
@@ -72,13 +72,6 @@
           </div>
 
           <div class="skill-field">
-            <p>CSS</p>
-            <div class="container">
-              <div id="css-skill"></div>
-            </div>
-          </div>
-
-          <div class="skill-field">
             <p>Bootstrap</p>
             <div class="container">
               <div id="boot-skill"></div>
@@ -89,7 +82,7 @@
         </div>
       </div>
 
-      <div class="box one-column">
+      <div class="box one-column skill-box">
         <h2 class="title">DESIGN</h2>
         <div class="skills">
           <div class="skill-field">
@@ -109,6 +102,49 @@
           <div class="shadow-box"></div>
         </div>
       </div>
+    </div>
+
+    <div class="wrapper grid-3-columns" id="work">
+      <div id="exp" class="box one-column">
+        <h2 class="title">Experiences</h2>
+        <div class="experiences">
+          
+          <div class="exp-field">
+            <img src="images/nu-logo.jpeg" alt="" class="img-fluid">
+            <div class="figure-text">
+              <div class="headers">
+                <p>October 2021 - Today</p>
+                <p>Research Assistant</p>
+              </div>
+              <p>Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.</p>
+            </div>
+          </div>
+
+          <div class="exp-field">
+            <img src="images/code-logo.png" alt="" class="img-fluid">
+            <div class="figure-text">
+              <div class="headers">
+                <p>June 2021 - September 2021</p>
+                <p>Programming Teacher</p>
+              </div>
+              <p>Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.</p>
+            </div>
+          </div>
+
+          <div class="exp-field">
+            <img src="images/tarazHub-logo.png" alt="" class="img-fluid">
+            <div class="figure-text">
+              <div class="headers">
+                <p>May 2019 (2020) - August 2019 (2020)</p>
+                <p>Intern in programming</p>
+              </div>
+              <p>Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.</p>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-box"></div>
+      </div>
+      <div id="projects"></div>
     </div>
   
   </body>
