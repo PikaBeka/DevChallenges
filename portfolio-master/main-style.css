@@ -5,11 +5,15 @@
 }
 
 :root {
-  --bg: #f2f2f2; /*grey color*/
+  --bg: #f2f2f2;
+  /*grey color*/
 
-  --blue-color: #2f80ed; /*blue color*/
-  --grey-color: #2f80ed; /*grey color*/
-  --box-color: #ffffff; /*background color for boxes*/
+  --blue-color: #2f80ed;
+  /*blue color*/
+  --grey-color: #2f80ed;
+  /*grey color*/
+  --box-color: #ffffff;
+  /*background color for boxes*/
 
   --font-color-headers: #4f4f4f;
   --gray3-color: #828282;
@@ -18,14 +22,22 @@
   --blog-hidden-color: #e0e0e0;
   --skill-color: #c4c4c4;
 
-  --px48: 3rem; /*48 px*/
-  --px36: 2.25rem; /*36 px*/
-  --px24: 1.5rem; /*24px*/
-  --px18: 1.125rem; /*18px*/
-  --px16: 1rem; /*16px*/
-  --px14: 0.875rem; /*14px*/
-  --px12: 0.75rem; /*12px*/
-  --px10: 0.625rem; /*10px*/
+  --px48: 3rem;
+  /*48 px*/
+  --px36: 2.25rem;
+  /*36 px*/
+  --px24: 1.5rem;
+  /*24px*/
+  --px18: 1.125rem;
+  /*18px*/
+  --px16: 1rem;
+  /*16px*/
+  --px14: 0.875rem;
+  /*14px*/
+  --px12: 0.75rem;
+  /*12px*/
+  --px10: 0.625rem;
+  /*10px*/
 
   --mont-font: "Montserrat", sans-serif;
 }
@@ -98,7 +110,8 @@ body {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"),
     url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
     url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
@@ -109,7 +122,8 @@ body {
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px; /* Preferred icon size */
+  font-size: 24px;
+  /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -142,7 +156,7 @@ p {
   color: var(--gray3-color);
 }
 
-#about{
+#about {
   margin-top: 50px;
 }
 
@@ -204,25 +218,26 @@ p {
   box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
 }
 
-.skill-box{
+.skill-box {
   height: fit-content;
 }
 
-.skill-box h2.title{
+.skill-box h2.title {
   font-weight: 700;
   font-size: var(--px18);
   line-height: 22px;
   text-transform: uppercase;
 }
 
-.skill-box .skills{
+.skill-box .skills {
   margin-top: 17px;
 }
 
-.skill-field{
+.skill-field {
   display: flex;
   justify-content: space-between;
   margin-bottom: 22px;
+  align-items: center;
 }
 
 .container {
@@ -232,119 +247,210 @@ p {
   border-radius: 12px;
 }
 
-.container div{
+.container div {
   height: 10px;
   background-color: var(--blue-color);
   border-radius: 12px;
 }
 
-#react-skill{
+#react-skill {
   width: 20%;
 }
 
-#js-skill{
+#js-skill {
   width: 50%;
 }
 
-#css-skill{
+#css-skill {
   width: 100%;
 }
 
-#boot-skill{
+#boot-skill {
   width: 40%;
 }
 
-#figma-skill{
+#figma-skill {
   width: 90%;
 }
 
-#ps-skill{
+#ps-skill {
   width: 10%;
 }
 
-.experiences{
+.experiences {
   margin-top: 44px;
 }
 
-.exp-field img{
+.exp-field img {
   width: 84px;
   height: 84px;
   margin-right: 16px;
 }
 
-.exp-field{
-  display:flex;
+.exp-field {
+  display: flex;
   justify-content: space-between;
   margin-bottom: 36px;
 }
 
-.exp-field p{
+.exp-field p {
   font-size: var(--px16);
   line-height: 20px;
 }
 
-.headers{
+.headers {
   margin-top: 10px;
   margin-bottom: 33px;
 }
 
-.headers p:first-child{
+.headers p:first-child {
   font-size: var(--px14);
   line-height: 17px;
   margin-bottom: 12px;
 }
 
-.headers p:last-child{
+.headers p:last-child {
   color: var(--onecol-header-color);
 }
 
+/******Projects*********/
+
+#projects {
+  max-width: 859px;
+}
+
+#projects p.description {
+  color: var(--font-color-headers)
+}
+
+#projects .project {
+  padding: 18px 18px 33px 18px;
+}
+
+#projects .project img {
+  margin-bottom: 24px;
+}
+
+#projects .project .tags {
+  font-size: var(--px16);
+  line-height: 19.5px;
+  margin-bottom: 22px;
+}
+
+#projects .project .title {
+  color: var(--onecol-header-color);
+  margin-bottom: 18px;
+}
+
+#projects .project .subtext {
+  font-size: var(--px16);
+  line-height: 20px;
+  margin-bottom: 41px;
+}
+
+.btns {
+  display: flex;
+}
+
+.btn {
+  width: 135px;
+  height: 46px;
+  text-align: center;
+  padding-top: 13px;
+  border-radius: 12px;
+
+  font-family: var(--mont-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--px18);
+  line-height: 22px;
+}
+
+.btn-filled {
+  background: var(--blue-color);
+  color: var(--box-color);
+  margin-right: 11px;
+}
+
+.btn-solid {
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+}
+
 @media screen and (min-width: 425px) {
-  #about{
+  #about {
     margin-top: 60px;
   }
 
   .contacts p {
     font-size: var(--px18);
   }
+
+  .one-column {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+  }
+
+  #projects {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .grid-3-columns{
+  .grid-3-columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 1fr));
     grid-template-rows: repeat(2, minmax(auto, 1fr));
     column-gap: 32px;
   }
 
-  .grid-3-columns div:nth-child(1){
+  .grid-3-columns div:nth-child(1) {
     grid-row-start: 1;
     grid-row-end: 3;
   }
 
-  .grid-3-columns div:nth-child(3){
+  .grid-3-columns div:nth-child(3) {
     grid-column-start: 2;
     grid-column-end: 3;
   }
+
+  .flx {
+    display: flex;
+  }
+
+  #exp {
+    height: fit-content;
+    margin-right: 32px;
+  }
+
+  #projects {
+    margin-top: 0px;
+  }
 }
 
+
 @media screen and (min-width: 1024px) {
-  .grid-3-columns{
+  .grid-3-columns {
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 1fr));
     grid-template-rows: unset;
     column-gap: 32px;
   }
 
-  .grid-3-columns div:nth-child(1){
+  .grid-3-columns div:nth-child(1) {
     grid-row-start: unset;
     grid-row-end: unset;
   }
 
-  .grid-3-columns div:nth-child(3){
+  .grid-3-columns div:nth-child(3) {
     grid-column-start: unset;
     grid-column-end: unset;
   }
+
+  #projects {
+    margin-top: -410px;
+  }
 }
 
-@media screen and (min-width: 1440px) {
-}
+@media screen and (min-width: 1440px) {}
