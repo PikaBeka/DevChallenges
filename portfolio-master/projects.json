@@ -1,0 +1,67 @@
+{
+  "projects": [
+    {
+      "image": "404-not-found.webp",
+      "alt": "Project 404 Not Found",
+      "tags": ["HTML", "CSS", "Responsive"],
+      "name": "404 Not Found",
+      "description": "In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.",
+      "demoLink": "https://not-found-605ac.web.app/",
+      "code": "https://github.com/PikaBeka/DevChallenges/tree/master/404-not-found"
+    },
+    {
+      "image": "my_team_page.webp",
+      "alt": "Project My Team Page",
+      "tags": ["HTML", "CSS", "Responsive"],
+      "name": "My Team Page",
+      "description": "In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.",
+      "demoLink": "https://my-team-page-b3ed4.web.app/%7D",
+      "code": "https://github.com/PikaBeka/DevChallenges/tree/master/my-team-page-master"
+    },
+    {
+      "image": "interior_consultant.webp",
+      "alt": "Project Interior Consultant",
+      "tags": ["HTML", "CSS", "Responsive"],
+      "name": "Interior Consultant",
+      "description": "In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.",
+      "demoLink": "https://interior-consultant-afcdc.web.app/",
+      "code": "https://github.com/PikaBeka/DevChallenges/tree/master/interior-consultant-master"
+    },
+    {
+      "image": "recipe_page.webp",
+      "alt": "Project Recipe Page",
+      "tags": ["HTML", "CSS", "Responsive"],
+      "name": "Recipe page",
+      "description": "In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.",
+      "demoLink": "https://recipe-page-b26f6.firebaseapp.com/",
+      "code": "https://github.com/PikaBeka/DevChallenges/tree/master/recipe-page-master"
+    },
+    {
+      "image": "my_gallery.webp",
+      "alt": "Project My Gallery",
+      "tags": ["HTML", "CSS", "Responsive"],
+      "name": "My Gallery",
+      "description": "In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.",
+      "demoLink": "https://gallery-page-6c267.web.app/",
+      "code": "https://github.com/PikaBeka/DevChallenges/tree/master/my-gallery-master"
+    },
+    {
+      "image": "checkout_page.webp",
+      "alt": "Project Checkout Page",
+      "tags": ["HTML", "CSS", "Responsive"],
+      "name": "Checkout Page",
+      "description": "In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.",
+      "demoLink": "https://checkout-page-9bdf6.web.app/",
+      "code": "https://github.com/PikaBeka/DevChallenges/tree/master/checkout-page-master"
+    },
+    {
+      "image": "edie_page.webp",
+      "alt": "Project Edie Homepage",
+      "tags": ["HTML", "CSS", "Responsive"],
+      "name": "Edie Homepage",
+      "description": "In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.",
+      "demoLink": "https://edie-homepage-f2ec6.web.app/",
+      "code": "https://github.com/PikaBeka/DevChallenges/tree/master/edie-homepage-master"
+    }
+  ]
+}
